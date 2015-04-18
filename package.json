@@ -2,6 +2,7 @@
     "name": "@optbot/cfgloader",
     "version": "0.0.1",
     "description": "Configuration loader for the optbot services.",
+    "main": "lib/cfgloader.js",
     "repository": {
         "type": "git",
         "url": "git://github.com/optbot/cfgloader.git"
