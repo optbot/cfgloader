@@ -13,11 +13,6 @@
     "private": true,
     "author": "Marshall Farrier, Robert Rodriguez, Mark Scappini",
     "license": "MIT",
-    "files": [
-        "cfgloader.js",
-        "LICENSE",
-        "README.md"
-    ],
     "dependencies": {
         "nconf": "~0.7.1"
     },
