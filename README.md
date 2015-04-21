@@ -1,3 +1,6 @@
+# DEPRECATED
+---
+
 OptBot Configuration Loader
 ===========================
 Description
@@ -35,13 +38,13 @@ Example from within an optbot service (hypothetically named `restapi`):
 	var host = config.get('web:host');
 	var port = config.get('web:port');
 
-This code will read an environment variable named `NPM_CONF_PATH` for a directory to locate a configuration file for the service qualified by name in the `cfgloader` constructor. If environment variable `NPM_CONF_PATH` has a value of `/etc/`, and the first argument provided to `cfgloader`'s constructor is `restapi`, `cfgloader` will look for a configuration file at `/etc/confg-restapi.json` and load it for values to override the `restapi`'s service configuration defaults provided as the second argument to the `cfgloader`'s constructor.
+This code will read an environment variable named `NPM_CONF_PATH` for a directory to locate a configuration file for the service qualified by name in the `cfgloader` constructor. If environment variable `NPM_CONF_PATH` has a value of `/etc/npmconfig/`, and the first argument provided to `cfgloader`'s constructor is `restapi`, `cfgloader` will look for a configuration file at `/etc/npmconfig/restapi.json` and load it for values to override the `restapi`'s service configuration defaults provided as the second argument to the `cfgloader`'s constructor.
 
 Testing
 ---
 
 ### Code conformity
-    $ jshint lib test
+    $ jshint lib
     $ jscs .
 
 Connects to
